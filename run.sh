@@ -32,5 +32,5 @@ for i in "${!PROXIES[@]}"; do
         --cpus=1.5 \
         --restart=always \
         --name "$CONTAINER_NAME" \
-        TrakkDev/earnapp
+        trakkdev/earnapp
 done
