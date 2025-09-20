@@ -31,7 +31,7 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
-          docker logs earnapp
+          docker logs -f earnapp
           docker inspect -f '{{.State.Status}}' earnapp
           echo test, and deploy your project. && sleep 600
           echo test, and deploy your project.
